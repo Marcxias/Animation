@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import sys
+import os
 import json
 
 from datetime import datetime
@@ -9,10 +9,6 @@ from dateutil import tz
 import requests
 
 from bs4 import BeautifulSoup
-
-
-# Get this year
-# thisYear = datetime.now(tz.gettz('Asia/Shanghai')).year
 
 
 def getPage(year):
@@ -93,8 +89,16 @@ if __name__ == '__main__':
 		'ova'
 	]
 
-	for y in sys.argv[1:]:
+	# Get this year
+	thisYear = datetime.now(tz.gettz('Asia/Shanghai')).year
+
+	yearMatrix = list(range(2009, thisYear + 1))
+
+	os.mkdir('Resources')
+
+	for y in yearMatrix:
+		os.mkdir(f'Resources/{y} 年')
 		for t in typeMatrix:
-			with open(f'{y} {t.title()}.json', 'w') as f:
+			with open(f'Resources/{y} 年/{y} {t.title()}.json', 'w') as f:
 				json.dump(serlize(y, t), f, indent=4, ensure_ascii=False)
 

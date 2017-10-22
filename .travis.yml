@@ -1,0 +1,24 @@
+language: python
+
+python:
+  - 3.6
+
+install:
+  - pip install requests
+  - pip install beautifulsoup4
+
+env:
+  global:
+    secure: GfjTLNFabs9+Df0V2E3WaE/sDespr5sirffVKI8CVC6TEu2MPg1skV5vxlCHEPRfA8ngC1WZRGkmIXBVp2niIsCfr3Aiy+ln4bCmdfnSBSlfnv+jkjoMWm5mmXQZ5dUDdjj0uN8Jh4Fax0jbaUoC2+zRwp5aXkiKJn6FIxzFc1cS4NLk5aTB16LsgH6X1AwS6ZzqpYzAJ7Y6VKdl4FD65DXsN92+Tuy1J0zxtn+NkoFWmeZ1eVRVWSVkd+mW/v3MKY4sOPBIBos8z/2ny1M9Y3flgOI/yTFYIYqV+wgJKn3QSFG3hb4kQGeiqHesUgU16wt12SONnwYufE5gW0DA7UXSQ1sZwf4pJQrN32k5IB9ufVxoPTGEiq+7FeE4KUCvPJGBDlSuVktU1h34o2a5RL+YiDinKFIZ1gMuG1B8yTykMIdawV3np5tVTvQgvFsd1ED0Y2/D0NfEkdDUopqcd59zH5tOW6ecYqCxqqhM5IwRxaVmac28NdwVJG8VgI8Y/KjRCdKNS0PigotdHsj46r7AW6dh+30OBnr+0Evg0xbO01DMm7LowKR+aDlPc/gzah3ko4qtvITZpC/DM1Pwr3gr8eXO2EcleKfc9L5YjSZ8j1j8QBOlxosSkjXVKIgk4NmrrpCKq8y5wtaQdDUvQwpFQLhzzPywnGVpKuXPUuo=
+
+script:
+  - python main.py
+
+after_script:
+  - cd Resources
+  - git init
+  - git config user.name 'Wolther47'
+  - git config user.email 'contact@wolther47.me'
+  - git add .
+  - git commit -m "Fetch on `date +'%Y-%m-%d %H:%M:%S'`"
+  - git push -f "https://${GITHUB_TOKEN}@github.com/wolther47/Animation.git" master:resources

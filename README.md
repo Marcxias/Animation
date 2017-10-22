@@ -1,5 +1,7 @@
 # Animation
 
+[![Build Status](https://travis-ci.org/wolther47/Animation.svg?branch=master)](https://travis-ci.org/wolther47/Animation)
+
 > 本项目从我（[@Wolther47](https://github.com/wolther47)）的 [Bangumi](https://github.com/wolther47/Bangumi) 项目分离
 
 这是一个非常简单的项目，主要目的只有一个：**从 Wikipedia 上将从 2009 年开始的每年的番剧爬取，并以 Json 的形式保存**。
@@ -13,7 +15,8 @@
   - [x] 解析 Table
   - [x] 解析 Row
   - [x] 解析 Text
-- [ ] 持续集成
+- [x] 持续集成
+- [ ] 自动 Release
 
 ## 踩坑
 

@@ -4,7 +4,9 @@
 
 > 本项目从我（[@Wolther47](https://github.com/wolther47)）的 [Bangumi](https://github.com/wolther47/Bangumi) 项目分离
 
-这是一个非常简单的项目，主要目的只有一个：**从 Wikipedia 上将从 2009 年开始的每年的番剧爬取，并以 Json 的形式保存**。
+**所有的 Json 文件，均放置在 [Resources](https://github.com/wolther47/Animation/tree/resources) 分支下。**
+
+这是一个非常简单的项目，主要目的只有一个：从 Wikipedia 上将从 2009 年开始的每年的番剧爬取，并以 Json 的形式保存。
 
 ## TODO
 

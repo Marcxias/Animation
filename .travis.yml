@@ -6,6 +6,7 @@ python:
 branches:
   only:
     - master
+    - /^v\d+(\.\d+)+$/
 
 install:
   - pip install requests
@@ -27,11 +28,3 @@ after_script:
   - git add .
   - git commit -m "Fetch on `date +'%Y-%m-%d %H:%M:%S'`"
   - git push -f "https://${GITHUB_TOKEN}@github.com/wolther47/Animation.git" master:resources
-
-deploy:
-  provider: releases
-  api_key: GITHUB_TOKEN
-  file: Resources
-  skip_cleanup: true
-  on:
-    tags: true

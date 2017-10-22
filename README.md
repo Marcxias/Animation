@@ -18,8 +18,8 @@
   - [x] 解析 Row
   - [x] 解析 Text
 - [x] 持续集成
-- [ ] 自动 Release
-	- [ ] 自动跳转到 Release 页面
+- [ ] ~~自动 Release~~
+  - [ ] ~~自动跳转到 Release 页面~~
 
 ## 踩坑
 

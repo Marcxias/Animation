@@ -3,9 +3,7 @@
 import os
 import json
 
-from datetime import datetime
-from dateutil import tz
-
+import arrow
 import requests
 
 from bs4 import BeautifulSoup
@@ -90,7 +88,7 @@ if __name__ == '__main__':
 	]
 
 	# Get this year
-	thisYear = datetime.now(tz.gettz('Asia/Shanghai')).year
+	thisYear = arrow.utcnow().to('Asia/Shanghai').year
 
 	yearMatrix = list(range(2009, thisYear + 1))
 

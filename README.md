@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/wolther47/Animation.svg?branch=master)](https://travis-ci.org/wolther47/Animation)
 
-> 本项目从我（[@Wolther47](https://github.com/wolther47)）的 [Bangumi](https://github.com/wolther47/Bangumi) 项目分离
+> 本项目从 [@Wolther47](https://github.com/wolther47) 的 [Bangumi](https://github.com/wolther47/Bangumi) 项目分离
 
 **所有的 JSON 文件，均放置在 [Resources](https://github.com/wolther47/Animation/tree/resources) 分支下。**
 

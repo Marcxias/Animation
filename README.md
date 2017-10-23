@@ -1,6 +1,6 @@
 # Animation
 
-[![Build Status](https://travis-ci.org/wolther47/Animation.svg?branch=master)](https://travis-ci.org/wolther47/Animation)
+[![Build Status](https://travis-ci.org/Caulidata/Animation.svg?branch=master)](https://travis-ci.org/Caulidata/Animation)
 
 > 本项目从 [@Wolther47](https://github.com/wolther47) 的 [Bangumi](https://github.com/wolther47/Bangumi) 项目分离
 

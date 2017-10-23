@@ -6,7 +6,6 @@ from concurrent.futures import ProcessPoolExecutor
 
 import arrow
 import requests
-
 from bs4 import BeautifulSoup
 
 
@@ -14,7 +13,6 @@ def getPage(year):
     """Fetch corresponding page.
     """
 
-    # Url
     requestUrl = f'https://zh.wikipedia.org/zh-cn/日本動畫列表_({year}年)'
 
     return requests.get(requestUrl).text
@@ -52,6 +50,7 @@ def extract(table, type):
 def getKeyList(type):
     """Get corresponding key list.
     """
+
     if type in ('spring', 'summer', 'autumn', 'winter'):
         return ['开始日－结束日', '作品名', '原名', '制作公司', '话数']
     else:
@@ -83,7 +82,6 @@ if __name__ == '__main__':
         'ova'
     ]
 
-    # Get this year
     thisYear = arrow.utcnow().to('Asia/Shanghai').year
 
     yearMatrix = range(2009, thisYear + 1)
